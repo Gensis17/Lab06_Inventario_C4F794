@@ -15,6 +15,7 @@
             };
         }
 
+        // Método para agregar un nuevo producto al inventario
         public void AgregarProducto(MODEL.Producto producto)
         {
             listaProductos.Add(producto);
