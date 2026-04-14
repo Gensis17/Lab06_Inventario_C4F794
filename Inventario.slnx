@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Inventario.BL/Inventario.BL.csproj" />
+  <Project Path="Inventario.MODEL/Inventario.MODEL.csproj" />
+  <Project Path="Inventario.UI/Inventario.UI.csproj" />
+</Solution>
