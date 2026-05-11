@@ -59,7 +59,10 @@ namespace Inventario.BL
 
         public List<MODEL.Producto> BuscarProductosPorCategoria(string categoriaProducto)
         {
-            var productosPorCategoria = _db.Productos.Where(p => p.Categoria.Equals(categoriaProducto, StringComparison.OrdinalIgnoreCase)).ToList();
+            var productosPorCategoria = _db.Productos
+                .Where(p => p.Categoria.ToLower() == categoriaProducto.ToLower())
+                .ToList();
+
             return productosPorCategoria;
         }
 
